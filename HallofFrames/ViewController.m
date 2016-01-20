@@ -47,8 +47,13 @@
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
     Picture *picture = [self.pictures objectAtIndex:indexPath.row];
     cell.imageView.image = picture.image;
+    cell.backgroundColor = picture.frameColor;
     return  cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+}
 
 @end
