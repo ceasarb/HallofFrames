@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Picture.h"
+#import "PictureCollectionViewCell.h"
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property NSArray *pictures;
@@ -20,11 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Picture *picture1 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture1"] addFrameColor:[UIColor blackColor]];
-    Picture *picture2 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture2"] addFrameColor:[UIColor blackColor]];
-    Picture *picture3 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture3"] addFrameColor:[UIColor blackColor]];
-    Picture *picture4 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture4"] addFrameColor:[UIColor blackColor]];
-    Picture *picture5 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture5"] addFrameColor:[UIColor blackColor]];
+    Picture *picture1 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture1"] addFrameColor:[UIColor whiteColor]];
+    Picture *picture2 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture2"] addFrameColor:[UIColor redColor]];
+    Picture *picture3 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture3"] addFrameColor:[UIColor greenColor]];
+    Picture *picture4 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture4"] addFrameColor:[UIColor blueColor]];
+    Picture *picture5 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture5"] addFrameColor:[UIColor orangeColor]];
     
     self.pictures = [NSArray arrayWithObjects:
                      picture1,
@@ -42,10 +43,11 @@
     return self.pictures.count;
 }
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
+-(PictureCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
     Picture *picture = [self.pictures objectAtIndex:indexPath.row];
-    cell.im
+    cell.imageView.image = picture.image;
+    return  cell;
 }
 
 

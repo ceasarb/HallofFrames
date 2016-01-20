@@ -49,6 +49,9 @@
                                             <constraint firstItem="CxK-Uu-E8r" firstAttribute="centerY" secondItem="yfJ-Tt-xWz" secondAttribute="centerY" id="e6y-l8-h6m"/>
                                             <constraint firstItem="CxK-Uu-E8r" firstAttribute="centerX" secondItem="yfJ-Tt-xWz" secondAttribute="centerX" id="ewP-y6-iym"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="CxK-Uu-E8r" id="fDV-pb-0wg"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
