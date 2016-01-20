@@ -14,14 +14,23 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMa-Xc-KOz">
                     <rect key="frame" x="277" y="172" width="46" height="30"/>
                     <state key="normal" title="Blue"/>
+                    <connections>
+                        <action selector="onColorPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fEk-8N-LbI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw7-Qv-cOs">
                     <rect key="frame" x="277" y="134" width="46" height="30"/>
                     <state key="normal" title="Red"/>
+                    <connections>
+                        <action selector="onColorPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="2QR-ij-f1H"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-XW-xQJ">
                     <rect key="frame" x="277" y="215" width="46" height="30"/>
                     <state key="normal" title="Green"/>
+                    <connections>
+                        <action selector="onColorPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="JS5-Ee-5PB"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

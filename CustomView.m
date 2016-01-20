@@ -11,9 +11,14 @@
 
 @implementation CustomView
 
--(void)customView:(CustomView *)view onButtonPressed:(UIButton *)button{
+//-(void)customView:(CustomView *)view updateButtonPressed:(UIButton *)button{
+//
+//}
 
+- (IBAction)onColorPressed:(UIButton *)sender {
+    [self.delegate customView:self updateButtonPressed:sender];
 }
+
 
 
 @end

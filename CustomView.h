@@ -12,7 +12,7 @@
 
 @protocol CustomViewDelegate <NSObject>
 
--(void)customView:(CustomView *)view onButtonPressed:(UIButton *)button;
+-(void)customView:(CustomView *)view updateButtonPressed:(UIButton *)button;
 
 
 @end
