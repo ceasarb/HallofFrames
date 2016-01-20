@@ -12,14 +12,13 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property NSArray *pictures;
 
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     
     Picture *picture1 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture1"] addFrameColor:[UIColor blackColor]];
     Picture *picture2 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"picture2"] addFrameColor:[UIColor blackColor]];
@@ -44,8 +43,9 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
+    Picture *picture = [self.pictures objectAtIndex:indexPath.row];
+    cell.im
 }
 
 
