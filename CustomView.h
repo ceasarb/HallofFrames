@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class CustomView;
+
+@protocol CustomViewDelegate <NSObject>
+
+-(void)customView:(CustomView *)view onButtonPressed:(UIButton *)button;
+
+
+@end
+
+
 @interface CustomView : UIView
+
+@property (nonatomic, assign) id <CustomViewDelegate> delegate;
 
 @end

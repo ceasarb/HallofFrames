@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "Picture.h"
 #import "PictureCollectionViewCell.h"
+#import "CustomView.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, CustomViewDelegate>
 @property NSArray *pictures;
+@property NSIndexPath *selectedPath;
 
 
 @end
@@ -52,6 +54,8 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedPath = indexPath;
+    
     
     
 }

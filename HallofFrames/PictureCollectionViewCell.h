@@ -12,6 +12,7 @@
 @interface PictureCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property Picture *picture;
 
 

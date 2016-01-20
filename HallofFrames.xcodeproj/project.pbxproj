@@ -31,8 +31,8 @@
 		1E0AFDCE1C501EB20068042E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E0AFDD01C501EB20068042E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E0AFDD61C503A940068042E /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
-		1E0AFDD81C503ADA0068042E /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
-		1E0AFDD91C503ADA0068042E /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		1E0AFDD81C503ADA0068042E /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = ../CustomView.h; sourceTree = "<group>"; };
+		1E0AFDD91C503ADA0068042E /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = ../CustomView.m; sourceTree = "<group>"; };
 		4CC054451C50230B007ECB7B /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
 		4CC054461C50230B007ECB7B /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 		4CC0544A1C502328007ECB7B /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
@@ -53,8 +53,6 @@
 		1E0AFDB31C501EB00068042E = {
 			isa = PBXGroup;
 			children = (
-				1E0AFDD81C503ADA0068042E /* CustomView.h */,
-				1E0AFDD91C503ADA0068042E /* CustomView.m */,
 				1E0AFDBE1C501EB10068042E /* HallofFrames */,
 				1E0AFDBD1C501EB10068042E /* Products */,
 			);
@@ -81,6 +79,8 @@
 				4CC054461C50230B007ECB7B /* PictureCollectionViewCell.m */,
 				4CC0544A1C502328007ECB7B /* Picture.h */,
 				4CC0544B1C502328007ECB7B /* Picture.m */,
+				1E0AFDD81C503ADA0068042E /* CustomView.h */,
+				1E0AFDD91C503ADA0068042E /* CustomView.m */,
 				1E0AFDCB1C501EB20068042E /* Assets.xcassets */,
 				1E0AFDCD1C501EB20068042E /* LaunchScreen.storyboard */,
 				1E0AFDD01C501EB20068042E /* Info.plist */,

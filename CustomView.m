@@ -7,15 +7,13 @@
 //
 
 #import "CustomView.h"
+#import "PictureCollectionViewCell.h"
 
 @implementation CustomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)customView:(CustomView *)view onButtonPressed:(UIButton *)button{
+
 }
-*/
+
 
 @end
