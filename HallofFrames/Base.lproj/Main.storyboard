@@ -45,6 +45,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="CxK-Uu-E8r" firstAttribute="centerY" secondItem="yfJ-Tt-xWz" secondAttribute="centerY" id="e6y-l8-h6m"/>
                                             <constraint firstItem="CxK-Uu-E8r" firstAttribute="centerX" secondItem="yfJ-Tt-xWz" secondAttribute="centerX" id="ewP-y6-iym"/>
@@ -54,6 +55,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="enX-Ry-pdR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gkz-iD-a1S"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

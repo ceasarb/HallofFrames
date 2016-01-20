@@ -16,8 +16,7 @@
 
 -(void)usePicture:(Picture *)picture {
     self.imageView.image = picture.image;
-    
-    //self.backgroundColor = picture.frameColor;
+    self.backgroundColor = picture.frameColor;
 }
 
 @end

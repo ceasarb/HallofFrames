@@ -44,7 +44,7 @@
 }
 
 -(PictureCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
+    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
     Picture *picture = [self.pictures objectAtIndex:indexPath.row];
     cell.imageView.image = picture.image;
     return  cell;
