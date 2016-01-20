@@ -10,4 +10,16 @@
 
 @implementation Picture
 
+-(instancetype)initWithImage:(UIImage *)image addFrameColor:(UIColor *)frameColor {
+    
+    self = [super init];
+    if(self) {
+        self.image = image;
+        self.frameColor = frameColor;
+        
+    }
+    return self;
+    
+}
+
 @end
