@@ -69,6 +69,9 @@
                             <constraint firstItem="2eg-7v-hkM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rKc-ZK-geN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="2eg-7v-hkM" id="Gde-nO-LTf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

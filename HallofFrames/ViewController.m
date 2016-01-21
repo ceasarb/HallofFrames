@@ -14,6 +14,7 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, CustomViewDelegate>
 @property NSArray *pictures;
 @property NSIndexPath *selectedPath;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 
 @end
@@ -50,13 +51,28 @@
     Picture *picture = [self.pictures objectAtIndex:indexPath.row];
     cell.imageView.image = picture.image;
     cell.backgroundColor = picture.frameColor;
+    
     return  cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedPath = indexPath;
     
+    CustomView *customView = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView"
+                                                            owner:self
+                                                          options:nil] objectAtIndex:0];
+    customView.frame = self.view.frame;
+    customView.delegate = self;
     
+    [self.view addSubview:customView];
+    
+}
+
+-(void)customView:(CustomView *)view updateButtonPressed:(UIButton *)button{
+    Picture *picture = [self.pictures objectAtIndex:self.selectedPath.row];
+    picture.frameColor = button.backgroundColor;
+    PictureCollectionViewCell *cell = (PictureCollectionViewCell *) [self.collectionView cellForItemAtIndexPath:self.selectedPath];
+    cell.backgroundColor = picture.frameColor;
     
 }
 
